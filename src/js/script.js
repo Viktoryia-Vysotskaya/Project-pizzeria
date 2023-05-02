@@ -530,6 +530,9 @@
           thisApp.data.products = parsedResponse;
           //execute initMenu method
           thisApp.initMenu();
+        })
+        .catch(function (error) {
+          console.error('Error while fetching products:', error);
         });
     },
   };
