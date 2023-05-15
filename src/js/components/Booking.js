@@ -32,13 +32,19 @@ class Booking {
         endDateParam,
       ],
     };
-    const urls = {
+    /*const urls = {
       booking: settings.db.url + '/' + settings.db.bookings
         + '?' + params.booking.join('&'),
       eventsCurrent: settings.db.url + '/' + settings.db.events
         + '?' + params.eventsCurrent.join('&'),
       eventsRepeat: settings.db.url + '/' + settings.db.events
         + '?' + params.eventsRepeat.join('&'),
+    };*/
+    const { url, bookings } = settings.db;
+    const urls = {
+      booking: `${url}/${bookings}?${params.booking.join('&')}`,
+      eventsCurrent: `${url}/${settings.db.events}?${params.eventsCurrent.join('&')}`,
+      eventsRepeat: `${url}/${settings.db.events}?${params.eventsRepeat.join('&')}`,
     };
     Promise.all([
       fetch(urls.booking),
@@ -236,7 +242,7 @@ class Booking {
       .then(function (response) {
         return response.json();
       }).then(function (parsedResponse) {
-        console.log('parsedResponse', parsedResponse);
+        //console.log('parsedResponse', parsedResponse);
         thisBooking.makeBooked(
           parsedResponse.date,
           parsedResponse.hour,
