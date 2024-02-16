@@ -75,7 +75,6 @@ const app = {
         return rawResponse.json();
       })
       .then(function (parsedResponse) {
-        //console.log('parsedResponse', parsedResponse);
         // save response as this.App.data.products
         thisApp.data.products = parsedResponse;
         //execute initMenu method
