@@ -2,7 +2,7 @@
 
 Application for pizzeria, written in JavaScript. 
 
-💻 Live demo: https://15ebb232-37ab-474e-af4f-db0c08d163b2-00-2mw1mj1yxg9t0.janeway.replit.dev
+💻 Live demo: https://project-pizzeria-v2n2.onrender.com
 
 (!) Free hosting so might take a while to load for first time.
 
