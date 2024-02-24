@@ -2,7 +2,7 @@
 
 Application for pizzeria, written in JavaScript. 
 
-💻 Live demo: https://project-pizzeria-v2n2.onrender.com
+💻 Live demo: https://project-pizzeria-viktoryiavysots.replit.app
 
 (!) Free hosting so might take a while to load for first time.
 
